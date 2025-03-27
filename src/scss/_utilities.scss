@@ -61,13 +61,12 @@ h3 {
 }
 
 ::selection {
-  background-color: #d7bc7184;
+  background-color: #8ac8c884;
 }
 
 // Animation for the main header
 .gradient-animation {
   // background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
-  // Спокойный градиент
   background: linear-gradient(135deg, $primary-color 0%, $accent-color 100%);
 
   background-size: 200% auto;

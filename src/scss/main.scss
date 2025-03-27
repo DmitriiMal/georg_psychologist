@@ -90,6 +90,9 @@ header {
   // background: radial-gradient(circle, #fff 0%, $light-color 80%);
   color: set-text-color($light-color);
 
+  p {
+    padding-bottom: 1rem;
+  }
   .section-flexbox {
     display: flex;
     // justify-content: space-between;
