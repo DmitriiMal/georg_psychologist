@@ -1,0 +1,24 @@
+@use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+$main-font: 'Montserrat', sans-serif;
+$heading-font: 'Barlow Condensed', sans-serif;
+$website-width: 1000px;
+// $main-color: #d7bc71;
+$main-color: #8ac8c8;
+$primary-color: #8ac8c8;
+$accent-color: #dcc6a9; // светло-бежевый
+// $light-color: #eee5cd;
+$light-color: #f8f8f6;
+$dark-color: #333;
+$bg-image: url('../assets/images/header.jpg');
+$responsive-paragraph: clamp(0.4rem, 6vw, 1.2rem);
+
+@function set-text-color($color) {
+  $lightness: color.channel($color, 'lightness', $space: hsl);
+
+  @if ($lightness > 50) {
+    @return $dark-color;
+  } @else {
+    @return $light-color;
+  }
+}

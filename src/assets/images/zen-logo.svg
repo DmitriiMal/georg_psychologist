@@ -1,0 +1,9 @@
+<!-- public/images/zen-logo.svg -->
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#2C2C2C">
+    <ellipse cx="32" cy="52" rx="18" ry="6" />
+    <ellipse cx="32" cy="38" rx="14" ry="5" />
+    <ellipse cx="32" cy="26" rx="10" ry="4" />
+    <ellipse cx="32" cy="16" rx="6" ry="3" />
+  </g>
+</svg>

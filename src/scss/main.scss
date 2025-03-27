@@ -1,0 +1,416 @@
+@use 'variables' as *;
+@use 'utilities';
+
+* {
+  // box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: $main-font;
+  line-height: 1.8;
+  overflow-x: hidden;
+  // height: 100%;
+  margin: 0;
+  padding: 0;
+  // position: relative;
+}
+
+header {
+  // background-color: $main-color;
+  // background: $bg-image no-repeat center center/cover;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%238AC8C8'/%3E%3Cstop offset='1' stop-color='%23DCC6A9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  height: 80vh;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  & * {
+    z-index: 1;
+  }
+
+  .header-content {
+    // width: clamp(500px, 80%, 1200px);
+    // margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    text-wrap: balance;
+    color: $light-color;
+
+    h1 {
+      // font-size: clamp(1rem, 8vw, 6rem);
+      font-weight: 600;
+    }
+
+    // h2 {
+    //   // font-size: clamp(0.8rem, 6vw, 4rem);
+    // }
+
+    p {
+      margin-top: 1rem;
+      font-size: $responsive-paragraph;
+    }
+  }
+
+  svg {
+    position: absolute;
+    bottom: -2px;
+    width: 100%;
+    height: 5vw;
+    fill: #fff;
+  }
+}
+
+.section-light {
+  min-height: 50vh;
+  text-wrap: balance;
+  background: $light-color;
+  background: linear-gradient(0deg, $accent-color 0%, #fff 100%);
+  // background: radial-gradient(circle, #fff 0%, $light-color 80%);
+  color: set-text-color($light-color);
+
+  .section-flexbox {
+    display: flex;
+    // justify-content: space-between;
+
+    .section-content {
+      flex-shrink: 0;
+      margin-right: 2rem;
+    }
+
+    .photo {
+      max-height: 20rem;
+      aspect-ratio: 1;
+      overflow: hidden;
+      object-fit: cover;
+      border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
+      animation: border-radius 8s linear infinite;
+      margin: 2rem auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+
+      &:hover img {
+        transform: scale(1.03);
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.section-white {
+  @extend .section-light;
+  background: #fff;
+}
+
+.section-photo {
+  // @extend .section-light;
+  // background: linear-gradient(90deg, $dark-color 0%, #444 100%);
+  // background: radial-gradient(circle, #444 0%, $dark-color 80%);
+  color: set-text-color($dark-color);
+  text-wrap: balance;
+  background: $dark-color;
+  background: url('../images/fuer_wen.jpg') no-repeat fixed center/cover;
+  min-height: 50vh;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  // Label "kostenlos & offen für alle"
+  .label {
+    height: 13rem;
+    width: 13rem;
+    background: $main-color;
+    background: linear-gradient(90deg, $accent-color 0%, $primary-color 100%);
+    color: set-text-color($main-color);
+    font-weight: 500;
+    font-size: $responsive-paragraph;
+    border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 50%;
+    margin-top: 1rem;
+    margin-bottom: -5rem;
+    animation: border-radius 8s linear infinite;
+  }
+
+  & * {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.section-gallery {
+  min-height: 50vh;
+  background-color: $light-color;
+  color: set-text-color($light-color);
+}
+
+#map {
+  height: 50vh;
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  filter: hue-rotate(330deg);
+  filter: hue-rotate(310deg);
+  border-radius: 2px;
+}
+
+// Footer
+footer {
+  min-height: 70vh;
+  background: radial-gradient(circle, #444 0%, $dark-color 80%);
+  color: set-text-color($dark-color);
+
+  background-color: #333333;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23444444' stroke-width='1' stroke-opacity='0.2'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  // background-size: contain;
+
+  // Contact Form
+  .box {
+    // background: transparent;
+    width: 100%;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-areas:
+      'name email'
+      'message message'
+      'submit submit';
+    grid-gap: 0 1rem;
+
+    .name-input {
+      grid-area: name;
+    }
+
+    .email-input {
+      grid-area: email;
+    }
+
+    .message-input {
+      grid-area: message;
+
+      #message {
+        min-height: 100px;
+      }
+    }
+
+    .submit-input {
+      grid-area: submit;
+      height: 100px;
+    }
+
+    .input__wrapper {
+      position: relative;
+      padding: 1rem 0;
+      padding: 1rem 1rem 1rem 0;
+
+      .input__field {
+        width: 100%;
+        outline: 1.5px solid $light-color;
+        font-size: 1rem;
+        border-radius: 0.25rem;
+        color: $light-color;
+        padding: 0.5rem;
+        // padding-right: 2rem;
+        border: none;
+        background: $dark-color;
+        transition: all 0.2s;
+
+        &::placeholder {
+          color: transparent;
+        }
+
+        &:placeholder-shown ~ .input__label {
+          font-size: 1rem;
+          cursor: text;
+          color: $light-color;
+          top: 1.2rem;
+        }
+
+        &:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0px 1000px $dark-color inset;
+          -webkit-text-fill-color: $light-color !important;
+        }
+      }
+
+      label,
+      .input__field:focus ~ .input__label {
+        position: absolute;
+        top: 0.05rem;
+        padding: 0 0.25rem;
+        background: $dark-color;
+        // display: block;
+        font-size: 0.875rem;
+        left: 0.5rem;
+        color: $light-color;
+        transition: 0.3s;
+      }
+
+      .input__field:focus ~ .input__label {
+        color: $main-color;
+      }
+
+      .input__field:focus {
+        outline: 1.5px solid $main-color;
+      }
+    }
+
+    #my-form-status {
+      margin: 2rem 0;
+    }
+  }
+
+  #copyright {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem;
+  }
+}
+
+// Button
+.input__submit {
+  padding: 0.75rem 3rem;
+  padding: 1rem 4rem;
+  border-radius: 100vw;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  // width: 50%;
+  margin: 1rem auto;
+  background: linear-gradient(50deg, #68d0cd, #fff 55%, #e15cb0);
+  background: linear-gradient(135deg, $primary-color 0%, $accent-color 100%);
+  color: $dark-color;
+  background-size: 130% auto;
+  background-position: 0% 75%;
+  animation: submit-exit 0.2s linear forwards;
+
+  &:hover,
+  &:focus-visible {
+    animation: submit-enter 0.2s linear forwards;
+  }
+}
+
+// To Top Button
+#to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 1rem;
+  padding: 1rem;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
+  animation: border-radius 6s linear infinite;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(20, 20, 20, 0.2);
+  background: linear-gradient(90deg, rgba(238, 229, 204, 0.5) 0%, rgba(216, 189, 114, 0.5) 100%);
+  color: set-text-color($main-color);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+@keyframes submit-enter {
+  // from {
+  //   background-position: 0% 75%;
+  // }
+
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes submit-exit {
+  from {
+    background-position: 100% 100%;
+  }
+
+  to {
+    background-position: 0% 75%;
+  }
+}
+
+// Animation for the label "kostenlos & offen für alle", photo and "to top button"
+@keyframes border-radius {
+  0% {
+    border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
+  }
+  20% {
+    border-radius: 42% 58% 66% 34% / 61% 59% 41% 39%;
+  }
+  40% {
+    border-radius: 37% 63% 63% 37% / 64% 53% 47% 36%;
+    transform: translateY(-10px);
+  }
+  60% {
+    border-radius: 34% 66% 52% 48% / 66% 46% 54% 34%;
+  }
+
+  100% {
+    border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
+    transform: translateY(0);
+  }
+}
+
+// Dashboard
+.dashboard {
+  @extend .section-light;
+  height: 100vh;
+
+  #date-form {
+    display: flex;
+    flex-direction: column;
+
+    .input__submit {
+      margin: 2rem 0;
+      padding: 1rem 2.5rem;
+      box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+// @use 'media';
