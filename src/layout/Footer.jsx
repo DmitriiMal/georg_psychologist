@@ -41,9 +41,9 @@ function Footer() {
         </div>
       </footer>
 
-      <button id='to-top'>
+      {/* <button id='to-top'>
         <i id='chevron-up' className='fa-solid fa-chevron-up fa-xl'></i>
-      </button>
+      </button> */}
     </>
   );
 }

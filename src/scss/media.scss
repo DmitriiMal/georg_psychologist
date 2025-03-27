@@ -1,4 +1,13 @@
 @media (max-width: 580px) {
+  header {
+    h1,
+    h2,
+    h3 {
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+  }
+
   .section-light {
     .section-flexbox {
       flex-direction: column-reverse;
@@ -26,6 +35,10 @@
         'email'
         'message'
         'submit';
+    }
+
+    .input__submit {
+      width: 100%;
     }
   }
 }

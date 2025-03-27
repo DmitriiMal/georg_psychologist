@@ -6,16 +6,10 @@
   margin: auto;
 }
 
-.container {
-  max-width: $website-width;
-  padding: 1.5rem;
-  margin: auto;
-}
-
 h1 {
   font-family: $heading-font;
   text-transform: uppercase;
-  font-size: clamp(3rem, 6vw, 6rem);
+  font-size: clamp(2.5rem, 6vw, 6rem);
 }
 
 h2 {
