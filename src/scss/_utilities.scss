@@ -8,6 +8,7 @@
 
 h1 {
   font-family: $heading-font;
+  font-weight: 600;
   text-transform: uppercase;
   font-size: clamp(2.5rem, 6vw, 6rem);
 }
@@ -55,7 +56,7 @@ h3 {
 }
 
 ::selection {
-  background-color: #8ac8c884;
+  background-color: #8ac8c858;
 }
 
 // Animation for the main header

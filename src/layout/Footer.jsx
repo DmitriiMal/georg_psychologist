@@ -7,7 +7,7 @@ function Footer() {
         <div className='container'>
           <h2 className='scroll-animation fade-in-left'>Kontakt</h2>
           <div className='bottom-line scroll-animation fade-in-left'></div>
-          <p className='scroll-animation fade-in-up'>Hast du Fragen oder möchtest du einfach Hallo sagen? Ich freue mich darauf, von dir zu hören!</p>
+          <p className='scroll-animation fade-in-up'>Ich freue mich darauf Sie in einem Erstgespräch kennenzulernen, zu schauen ob wir gemeinsam arbeiten können und der Grundpfeiler Sympathie gegeben ist. Schreiben Sie mir gerne eine E-Mail oder rufen Sie mich persönlich an und hinterlassen mir eine Sprachnachricht- ich rufe Sie folgend ehestmöglich zurück.</p>
           <form className='box' id='my-form' action='https://formspree.io/f/mvoeyoly' method='POST'>
             <div className='input__wrapper name-input scroll-animation up'>
               <input type='text' name='name' id='name' className='input__field' placeholder='Your Name' required />
