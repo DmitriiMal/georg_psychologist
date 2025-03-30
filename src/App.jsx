@@ -1,7 +1,7 @@
 // import Navbar from './layout/Navbar.jsx';
 import Home from './pages/Home.jsx';
 import Footer from './layout/Footer.jsx';
-import ToTopButton from './components/hero/ToTopButton.jsx';
+import ToTopButton from './components/ToTopButton.jsx';
 
 function App() {
   return (
