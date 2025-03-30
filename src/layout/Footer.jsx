@@ -40,10 +40,6 @@ function Footer() {
           <p>&copy; {new Date().getFullYear()} Wildhaber</p>
         </div>
       </footer>
-
-      {/* <button id='to-top'>
-        <i id='chevron-up' className='fa-solid fa-chevron-up fa-xl'></i>
-      </button> */}
     </>
   );
 }

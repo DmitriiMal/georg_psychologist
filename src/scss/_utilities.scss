@@ -28,7 +28,7 @@ h3 {
   width: 6rem;
   background: $main-color;
   // background: linear-gradient(90deg, $light-color 0%, $main-color 100%);
-  background: linear-gradient(135deg, $primary-color 0%, $accent-color 100%);
+  background: linear-gradient(135deg, $main-color 0%, $accent-color 100%);
   display: block;
   margin: 1rem 0 1.5rem 0;
   border-radius: 1px;
@@ -62,7 +62,7 @@ h3 {
 // Animation for the main header
 .gradient-animation {
   // background: linear-gradient(to right, #68d0cd, #fff 35%, #e15cb0);
-  background: linear-gradient(135deg, $primary-color 0%, $accent-color 100%);
+  background: linear-gradient(135deg, $main-color 0%, $accent-color 100%);
 
   background-size: 200% auto;
   background-clip: text;
