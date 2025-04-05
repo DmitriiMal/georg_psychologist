@@ -30,11 +30,12 @@ function Footer() {
                 <FontAwesomeIcon id='envelope' icon={faEnvelope} />
                 wildhaber@gmx.at
               </a>
+              {/* Todo: check for custom email in GoDaddy */}
             </li>
             <li>
               <a href='tel:0660/ 902 67 67'>
                 <FontAwesomeIcon id='phone' icon={faPhone} />
-                660/ 902 67 67
+                0660/ 902 67 67
               </a>
             </li>
           </ul>
