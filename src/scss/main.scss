@@ -24,6 +24,19 @@ body {
   // position: relative;
 }
 
+a {
+  color: $link-gradient !important;
+}
+
+// a:link - a normal, unvisited link
+// a:visited - a link the user has visited
+// a:hover - a link when the user mouses over it
+// a:active - a link the moment it is clicked
+
+svg[data-icon] {
+  margin-right: 0.5rem;
+}
+
 mark {
   background-color: #8ac8c83a;
   background: linear-gradient(135deg, #8ac8c83a 0%, #dcc6a970 100%);
@@ -363,6 +376,11 @@ footer {
   &:focus-visible {
     animation: submit-enter 0.2s linear forwards;
   }
+}
+
+// Contact data
+.contact-data {
+  list-style: none;
 }
 
 // To Top Button

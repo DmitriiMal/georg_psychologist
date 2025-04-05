@@ -10,6 +10,9 @@ $light-color: #f0ede6;
 $dark-color: #333;
 $bg-image: url('../assets/images/header.jpg');
 $responsive-paragraph: clamp(0.4rem, 6vw, 1.2rem);
+$link-gradient: linear-gradient(to right, #8ac8c8, #dcc6a9);
+$link-gradient: #8ac8c8;
+// background: linear-gradient(135deg, #8ac8c83a 0%, #dcc6a970 100%);
 
 @function set-text-color($color) {
   $lightness: color.channel($color, 'lightness', $space: hsl);
