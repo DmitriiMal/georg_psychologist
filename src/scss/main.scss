@@ -1,5 +1,6 @@
 @use 'variables' as *;
 @use 'utilities';
+@use 'navbar';
 // @use 'media';
 
 * {
@@ -349,7 +350,7 @@ footer {
     }
   }
 
-  #copyright {
+  #bottom-info {
     text-align: center;
     margin-top: 4rem;
     padding: 1rem;

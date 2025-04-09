@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
   const [state, handleSubmit] = useForm('mwplrnpn');
   if (state.succeeded) {
-    return <p>Danke für deine Nachricht!</p>;
+    return <h3 className='scroll-animation fade-in-up'>Danke für Ihre Nachricht!</h3>;
   }
   return (
     <form className='box' id='my-form' onSubmit={handleSubmit}>
