@@ -39,7 +39,7 @@ function Navbar() {
   };
 
   return (
-    <header className='header-nav'>
+    <div className={!menuOpen ? 'header-nav blur' : 'header-nav'}>
       <div className='header-nav__content'>
         <Link to='/' className='header-nav__content__logo'>
           Logo
@@ -89,7 +89,7 @@ function Navbar() {
         {/* <div className='header-nav__content__toggle'>{!menuOpen ? <h1 onClick={menuToggleHandler}>A</h1> : <h1 onClick={menuToggleHandler}>B</h1>}</div> */}
         <div className='header-nav__content__toggle'>{!menuOpen ? <BiMenuAltRight onClick={menuToggleHandler} /> : <AiOutlineClose onClick={menuToggleHandler} />}</div>
       </div>
-    </header>
+    </div>
   );
 }
 
