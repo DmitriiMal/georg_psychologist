@@ -43,7 +43,8 @@ function Navbar() {
   };
 
   return (
-    <div className={!menuOpen ? 'header-nav blur' : 'header-nav'}>
+    // <div className={!menuOpen ? 'header-nav blur' : 'header-nav transparent'}>
+    <div className={`header-nav ${menuOpen ? 'transparent' : 'blur'}`}>
       <div className='header-nav__content'>
         <Link to='/' className='header-nav__content__logo'>
           Logo

@@ -13,16 +13,18 @@
   backdrop-filter: blur(4px);
 }
 
+.transparent {
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
 .header-nav {
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   right: 0;
-  // position: sticky;
-  // top: 60px;
-  background: #dcc6a983;
-  background: #3950507a;
   background: linear-gradient(90deg, #3034349a 0%, #172c2cb3 100%);
   border-bottom: 1px solid #3c505043;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -33,7 +35,6 @@
   @include breakpoint(md) {
     padding: 0 3rem;
     height: 90px;
-    // top: 90px;
   }
   // transition: 0.3s ease all;
 
@@ -126,8 +127,10 @@
         }
 
         .btn {
-          padding-inline: 2.5rem !important;
-          margin-left: 0.5rem;
+          @include breakpoint(md) {
+            padding-inline: 2.5rem !important;
+            margin-left: 0.5rem;
+          }
         }
       }
 
@@ -159,3 +162,5 @@
     }
   }
 }
+
+// to fix position / width ... ???s
