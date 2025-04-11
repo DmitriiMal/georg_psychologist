@@ -21,7 +21,6 @@
 
 .header-nav {
   position: fixed;
-  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -83,7 +82,6 @@
         height: 100%;
         position: static;
         backdrop-filter: none;
-        // margin-right: 4rem;
       }
 
       ul {
@@ -96,7 +94,7 @@
           flex-direction: row;
           align-items: center;
           margin-bottom: 0;
-          margin-right: calc(0.5rem + #{16px});
+          // margin-right: calc(0.5rem + #{16px});
         }
         li {
           &:not(:last-child) {
@@ -163,4 +161,4 @@
   }
 }
 
-// to fix position / width ... ???s
+// to fix links width ...
