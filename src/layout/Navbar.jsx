@@ -45,7 +45,9 @@ function Navbar() {
   return (
     <div className={!menuOpen ? 'header-nav blur' : 'header-nav'}>
       <div className='header-nav__content'>
-        <Link to='/' className='header-nav__content__logo'></Link>
+        <Link to='/' className='header-nav__content__logo'>
+          Logo
+        </Link>
         <nav
           className={`${'header-nav__content__nav'} 
           ${menuOpen && size.width < 768 ? `${'isMenu'}` : ''} 
