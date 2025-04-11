@@ -38,12 +38,14 @@ function Navbar() {
     setMenuOpen((p) => !p);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className={!menuOpen ? 'header-nav blur' : 'header-nav'}>
       <div className='header-nav__content'>
-        <Link to='/' className='header-nav__content__logo'>
-          Logo
-        </Link>
+        <Link to='/' className='header-nav__content__logo'></Link>
         <nav
           className={`${'header-nav__content__nav'} 
           ${menuOpen && size.width < 768 ? `${'isMenu'}` : ''} 
@@ -54,6 +56,7 @@ function Navbar() {
                 to='/'
                 onClick={() => {
                   menuOpen ? setMenuOpen(false) : null;
+                  scrollToTop();
                 }}>
                 Home
               </Link>
