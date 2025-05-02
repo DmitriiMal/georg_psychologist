@@ -29,7 +29,8 @@ function Navbar() {
   }, []);
 
   useEffect(() => {
-    if (size.width > 768 && menuOpen) {
+    // if (size.width > 768 && menuOpen) {
+    if (size.width > 1088 && menuOpen) {
       setMenuOpen(false);
     }
   }, [size.width, menuOpen]);
@@ -47,11 +48,11 @@ function Navbar() {
     <div className={`header-nav ${menuOpen ? 'transparent' : 'blur'}`}>
       <div className='header-nav__content'>
         <Link to='/' className='header-nav__content__logo'>
-          Logo
+          {/* Logo */}
         </Link>
         <nav
           className={`${'header-nav__content__nav'} 
-          ${menuOpen && size.width < 768 ? `${'isMenu'}` : ''} 
+          ${menuOpen && size.width < 1088 ? `${'isMenu'}` : ''} 
           }`}>
           <ul>
             <li>
