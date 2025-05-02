@@ -12,10 +12,12 @@ import { HashLink } from 'react-router-hash-link';
 function Navbar() {
   // const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
   const [size, setSize] = useState({
     width: 0,
     height: 0,
   });
+
   useEffect(() => {
     const handleResize = () => {
       setSize({
@@ -43,9 +45,18 @@ function Navbar() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolling(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll); // cleanup
+  }, []);
+
   return (
     // <div className={!menuOpen ? 'header-nav blur' : 'header-nav transparent'}>
-    <div className={`header-nav ${menuOpen ? 'transparent' : 'blur'}`}>
+    <div className={`header-nav ${menuOpen ? 'transparent' : ''} ${!isScrolling ? 'transparent' : ''} ${!menuOpen && isScrolling ? 'blur' : ''}`}>
       <div className='header-nav__content'>
         <Link to='/' className='header-nav__content__logo'>
           {/* Logo */}
