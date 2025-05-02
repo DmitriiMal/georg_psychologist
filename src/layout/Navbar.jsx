@@ -7,6 +7,7 @@ import {
   // useNavigate
 } from 'react-router';
 import { HashLink } from 'react-router-hash-link';
+import StonesLogo from './StonesLogo';
 // import './navbar.scss';
 
 function Navbar() {
@@ -58,8 +59,14 @@ function Navbar() {
     // <div className={!menuOpen ? 'header-nav blur' : 'header-nav transparent'}>
     <div className={`header-nav ${menuOpen ? 'transparent' : ''} ${!isScrolling ? 'transparent' : ''} ${!menuOpen && isScrolling ? 'blur' : ''}`}>
       <div className='header-nav__content'>
-        <Link to='/' className='header-nav__content__logo'>
-          {/* Logo */}
+        <Link
+          to='/'
+          className='header-nav__content__logo'
+          onClick={() => {
+            menuOpen ? setMenuOpen(false) : null;
+            scrollToTop();
+          }}>
+          <StonesLogo />
         </Link>
         <nav
           className={`${'header-nav__content__nav'} 

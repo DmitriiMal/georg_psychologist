@@ -14,6 +14,16 @@ $link-gradient: linear-gradient(to right, #8ac8c8, #dcc6a9);
 $link-gradient: #8ac8c8;
 // background: linear-gradient(135deg, #8ac8c83a 0%, #dcc6a970 100%);
 
+$stone-bottom: #b4aaa3;
+$stone-middle: #c7beb7;
+$stone-top: #dcd4cc;
+
+// :root {
+//   --stone-bottom: #b4aaa3;
+//   --stone-middle: #c7beb7;
+//   --stone-top: #dcd4cc;
+// }
+
 @function set-text-color($color) {
   $lightness: color.channel($color, 'lightness', $space: hsl);
 
