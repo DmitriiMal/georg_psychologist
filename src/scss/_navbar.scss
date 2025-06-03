@@ -115,7 +115,7 @@
           }
           * {
             text-decoration: none;
-            color: $accent-color !important;
+            color: $light-color !important;
             padding: 0.7rem 1.2rem;
             // border-radius: 12px;
             border-radius: 0.25rem;
@@ -160,7 +160,7 @@
         width: 100%;
       }
       &:hover {
-        color: $accent-color;
+        color: $light-color;
       }
 
       @include breakpoint(lg) {

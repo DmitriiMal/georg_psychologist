@@ -117,12 +117,39 @@ header {
     }
   }
 
-  svg {
+  // .frame-decoration {
+  //   position: absolute;
+  //   bottom: -2px;
+  //   fill: #fff;
+  //   display: block;
+  //   width: 100%;
+  //   height: 100px;
+  // }
+
+  .frame-decoration {
     position: absolute;
     bottom: -2px;
+    display: block;
     width: 100%;
-    height: 5vw;
     fill: #fff;
+    z-index: 1;
+    pointer-events: none;
+    height: min(100px, 10vw);
+  }
+
+  .wave-animated path {
+    animation: waveFloat 8s ease-in-out infinite;
+    transform-origin: center bottom;
+  }
+
+  @keyframes waveFloat {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(8px);
+    }
   }
 }
 
@@ -130,7 +157,7 @@ header {
   min-height: 50vh;
   text-wrap: balance;
   background: $light-color;
-  background: linear-gradient(0deg, $accent-color 0%, #fff 100%);
+  background: linear-gradient(0deg, $light-color 0%, #fff 100%);
   // background: radial-gradient(circle, #fff 0%, $light-color 80%);
   color: set-text-color($light-color);
 
