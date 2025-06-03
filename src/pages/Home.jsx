@@ -100,7 +100,7 @@ export default function Home() {
             <li className='scroll-animation fade-in-up'>Depression und Burnout</li>
             <li className='scroll-animation fade-in-up'>Schlafstörungen</li>
             <li className='scroll-animation fade-in-up'>Suchtverhalten</li>
-            <li className='scroll-animation fade-in-up'>uvm.</li>
+            <li className='scroll-animation fade-in-up'>...</li>
           </ul>
         </div>
       </section>
