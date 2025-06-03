@@ -51,8 +51,8 @@ export default function Home() {
               {/* <p className='scroll-animation fade-in-up'>Guten Tag und hallo! Ich heiße Sie recht herzlich auf meiner Homepage willkommen. Ich bin Klinischer Psychologe, spezialisiert auf Stress- und Stressfolgeerkrankungen. In meinem Werdegang konnte ich verschiedene berufliche Erfahrungen sammeln, darunter Pflege, Rettungswesen und Seelsorge. Dabei wurde mir klar, dass Stress ein großes Thema unserer heutigen Zeit ist.</p> */}
               {/* <p className='scroll-animation fade-in-up'>Mir ist es ein Anliegen, gemeinsam mit meinen KlientInnen Techniken zu erarbeiten, um schwierige Lebensabschnitte zu meistern und zu innerer Ruhe zu finden. Dabei orientiere ich mich an Verhaltenstherapie, Positiver und Buddhistischer Psychologie sowie Entspannungsverfahren (Meditation, Yoga, PMR, etc.).</p> */}
               {/* <p className='scroll-animation fade-in-up'>ich heiße Sie recht herzlich auf der Homepage meiner psychologischen Praxis willkommen.</p> */}
-              <p className='scroll-animation fade-in-up'>Im Leben ist nicht immer alles nur ein Hoch, sondern ab und zu befindet sich der Mensch aufgrund verschiedener Umstände in einem Tief. In einem solchen Moment, sei es verursacht durch Stress, Krankheit oder schwierigen Lebensumständen, ist es sehr mutig sich jemandem Objektiven und Außenstehenden anzuvertrauen, um eigene Perspektiven und Vorstellungen zu relativieren.</p>
-              <p className='scroll-animation fade-in-up'>Durch ein Gespräch auf Augenhöhe, können gemeinsam neue Perspektiven erarbeiteten werden, sowie werden hilfreiche Interventionen in das Behandlungssetting eingebaut um mit den Herausforderungen des Lebens ein Stück leichter umgehen zu können und zu mehr innerer Ruhe zu finden.</p>
+              <p className='scroll-animation fade-in-up'>Im Leben ist nicht immer alles nur ein Hoch, sondern ab und zu befindet sich der Mensch aufgrund verschiedener Umstände in einem Tief. In einem solchen Moment, sei es verursacht durch Stress, Krankheit oder schwierige Lebensumstände, ist es sehr mutig sich jemandem Objektiven und Außenstehenden anzuvertrauen, um eigene Perspektiven und Vorstellungen zu relativieren.</p>
+              <p className='scroll-animation fade-in-up'>Durch ein Gespräch auf Augenhöhe können gemeinsam neue Perspektiven erarbeiteten werden, sowie werden hilfreiche Interventionen in das Behandlungssetting eingebaut um mit den Herausforderungen des Lebens ein Stück leichter umgehen zu können und zu mehr innerer Ruhe zu finden.</p>
             </div>
             <div className='photo scroll-animation fade-in-up'>
               <img src={wildhaber} alt='Foto vom Georg Wildhaber' />
@@ -93,7 +93,7 @@ export default function Home() {
               <li className='scroll-animation fade-in-up'>Bluthochdruck</li>
               <li className='scroll-animation fade-in-up'>Kopfschmerzen</li>
               <li className='scroll-animation fade-in-up'>Verspannungen, Schmerzen</li>
-              <li className='scroll-animation fade-in-up'>Magen-, Darmschwierigkeiten</li>
+              <li className='scroll-animation fade-in-up'>Magen-, Darmbeschwerden</li>
               <li className='scroll-animation fade-in-up'>etc.</li>
             </ul>
             <li className='scroll-animation fade-in-up'>Angst und Panik</li>
@@ -112,8 +112,8 @@ export default function Home() {
           <div className='bottom-line scroll-animation fade-in-left'></div>
           {/* <p className='scroll-animation fade-in-up'>Eine Einheit (50 Minuten) kostet 90 Euro. Bei Vorliegen einer krankheitswertigen Störung ist ein Kostenzuschuss durch die Krankenkasse möglich (ca. 35 Euro pro Einheit). In Ausnahmefällen biete ich einen Sozialtarif an. Meine Absageregelung: bitte informieren Sie mich bis spätestens 24 Stunden vor dem Termin, ansonsten muss der volle Betrag verrechnet werden.</p> */}
           <p className='scroll-animation fade-in-up'>
-            Als Klinischer Psychologe unterliege ich der gesetzlichen <mark>Schweigepflicht</mark>, aber auch Dokumentationspflicht. Das Gespräch kann persönlich, aber auch per Onlineberatung erfolgen. Der Preis für dieses beläuft sich auf <mark>90 Euro pro Einheit,</mark> wobei eine Einheit <mark>50 Minuten</mark> umfasst, hierbei kann in Ausnahmefällen ein Sozialtarif vereinbart werden. Im Falle einer krankheitswertigen Störung kann mit Ihrer Krankenkasse ein Zuschuss zur Behandlung geltend
-            gemacht werden, dieser ist abhängig von Ihrer Krankenkasse und umfasst in etwa <mark>35 Euro pro Behandlungseinheit</mark>.
+            Als Klinischer Psychologe unterliege ich der gesetzlichen <mark>Schweigepflicht</mark>, aber auch Dokumentationspflicht. Der Preis für dieses beläuft sich auf <mark>90 Euro pro Einheit,</mark> wobei eine Einheit <mark>50 Minuten</mark> umfasst, hierbei kann in Ausnahmefällen ein Sozialtarif vereinbart werden. Im Falle einer krankheitswertigen Störung kann mit Ihrer Krankenkasse ein Zuschuss zur Behandlung geltend gemacht werden, dieser ist abhängig von Ihrer Krankenkasse und umfasst
+            in etwa <mark>35 Euro pro Behandlungseinheit</mark>.
           </p>
           <p className='scroll-animation fade-in-up'>
             <mark>Sollten Sie einen Termin nicht wahrnehmen können</mark>, besagt meine Absageregelung, dass Sie mir dies bitte bis <mark>24 Stunden vor dem Termin melden</mark>, ansonsten muss der volle Betrag in Rechnung gestellt werden. Sollten sich bei Ihnen Unklarheiten ergeben, informiere ich Sie gerne bei unserem Erstgespräch nochmals diesbezüglich.

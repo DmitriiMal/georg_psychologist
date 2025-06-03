@@ -38,7 +38,7 @@ function Footer() {
             </li>
           </ul>
           <p className='scroll-animation fade-in-up'>Ich freue mich darauf Sie in einem Erstgespräch kennenzulernen, zu schauen ob wir gemeinsam arbeiten können und der Grundpfeiler Sympathie gegeben ist. Schreiben Sie mir gerne eine E-Mail oder rufen Sie mich persönlich an und hinterlassen mir eine Sprachnachricht- ich rufe Sie folgend ehestmöglich zurück.</p>
-          <ContactForm />
+          {/* <ContactForm /> */}
         </div>
         <div id='bottom-info'>
           <p>&copy; {new Date().getFullYear()} Wildhaber</p>
