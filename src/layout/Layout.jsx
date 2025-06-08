@@ -5,6 +5,7 @@ import Footer from '@layout/Footer.jsx';
 import ToTopButton from '@components/ToTopButton.jsx';
 import '@scss/main.scss';
 import '@scss/media.scss';
+import Header from '@layout/Header.jsx';
 
 function checkBoxes() {
   const boxes = document.querySelectorAll('.scroll-animation');
@@ -32,6 +33,7 @@ function Layout() {
   return (
     <>
       <Navbar />
+      <Header />
       <Outlet />
       <Footer />
       <ToTopButton />
