@@ -10,9 +10,12 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
+      '@components': path.resolve(__dirname, './src/components'),
+      '@utilities': path.resolve(__dirname, './src/utilities'),
       '@assets': path.resolve(__dirname, './src/assets'),
-      // можно добавить и другие алиасы, например:
-      // '@components': path.resolve(__dirname, './src/components'),
+      '@layout': path.resolve(__dirname, './src/layout'),
+      '@pages': path.resolve(__dirname, './src/pages'),
+      '@scss': path.resolve(__dirname, './src/scss'),
     },
   },
 });

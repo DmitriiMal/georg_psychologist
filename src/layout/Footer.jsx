@@ -1,8 +1,10 @@
 // layout/Footer.jsx
 
-import ContactForm from '../components/ContactForm';
+// import ContactForm from '../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import { scrollToTop } from '@utilities/scrollToTop';
 
 function Footer() {
   return (
@@ -42,6 +44,14 @@ function Footer() {
         </div>
         <div id='bottom-info'>
           <p>&copy; {new Date().getFullYear()} Wildhaber</p>
+          <p className='divider'>|</p>
+          <Link
+            to={'impressum'}
+            onClick={() => {
+              scrollToTop();
+            }}>
+            Impressum
+          </Link>
         </div>
       </footer>
     </>

@@ -1,30 +1,6 @@
-import React, { useEffect } from 'react';
 import { wildhaber } from '@assets/images/index.js';
 
-// Function to animate elements on scroll
-function checkBoxes() {
-  const boxes = document.querySelectorAll('.scroll-animation');
-  const triggerBottom = (window.innerHeight / 5) * 4.5;
-  boxes.forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top;
-    if (boxTop < triggerBottom) {
-      box.classList.add('show');
-    } else {
-      box.classList.remove('show');
-    }
-  });
-}
-
 export default function Home() {
-  // Hook to ensure the animation works both on load and on scroll
-  useEffect(() => {
-    window.addEventListener('scroll', checkBoxes);
-    checkBoxes();
-    return () => {
-      window.removeEventListener('scroll', checkBoxes);
-    };
-  }, []);
-
   return (
     <>
       <header>
@@ -41,7 +17,7 @@ export default function Home() {
         <svg className='frame-decoration wave-animated' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'>
           <defs>
             <filter id='wave-shadow' x='-50%' y='-50%' width='200%' height='200%'>
-              <feDropShadow dx='0' dy='-2' stdDeviation='4' flood-color='rgba(0,0,0,0.12)' />
+              <feDropShadow dx='0' dy='-2' stdDeviation='4' floodColor='rgba(0,0,0,0.12)' />
             </filter>
           </defs>
           <path d='M0,0 C360,80 1080,20 1440,60 V100 H0 Z' fill='#ffffff' filter='url(#wave-shadow)' />

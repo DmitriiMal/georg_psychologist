@@ -1,16 +1,17 @@
-import Navbar from './layout/Navbar.jsx';
-import Home from './pages/Home.jsx';
-import Footer from './layout/Footer.jsx';
-import ToTopButton from './components/ToTopButton.jsx';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from '@layout/Layout';
+import Home from '@pages/Home';
+import Impressum from '@pages/Impressum';
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <Home />
-      <Footer />
-      <ToTopButton />
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path='impressum' element={<Impressum />} />
+        </Route>
+      </Routes>
     </BrowserRouter>
   );
 }

@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { scrollToTop } from '@utilities/scrollToTop';
 import { useState, useEffect, useRef } from 'react';
 
 export default function ToTopButton() {
@@ -14,10 +15,6 @@ export default function ToTopButton() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll); // cleanup
   }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   const addBounce = () => {
     if (iconRef.current) {

@@ -40,5 +40,14 @@
     .input__submit {
       width: 100%;
     }
+
+    #bottom-info {
+      flex-direction: column-reverse;
+      gap: 0rem;
+
+      .divider {
+        display: none;
+      }
+    }
   }
 }
