@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import { scrollToTop } from '@utilities/scrollToTop';
+import { HashLink } from 'react-router-hash-link';
 
 function Footer() {
   return (
@@ -45,13 +46,20 @@ function Footer() {
         <div id='bottom-info'>
           <p>&copy; {new Date().getFullYear()} Wildhaber</p>
           <p className='divider'>|</p>
-          <Link
+          <HashLink
+            to={'impressum#header'}
+            // onClick={() => {
+            //   scrollToTop();
+            // }}
+          >
+            {/* <Link
             to={'impressum'}
             onClick={() => {
               scrollToTop();
-            }}>
+            }}
+          > */}
             Impressum
-          </Link>
+          </HashLink>
         </div>
       </footer>
     </>

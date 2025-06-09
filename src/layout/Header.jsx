@@ -1,8 +1,8 @@
 import { Children } from 'react';
 
-export default function Header({ children, className = 'h-27' }) {
+export default function Header({ children, className = '' }) {
   return (
-    <header className={className}>
+    <header id='header' className={className}>
       {children}
 
       <svg className='frame-decoration wave-animated' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 100' preserveAspectRatio='none'>
