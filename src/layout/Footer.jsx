@@ -46,20 +46,16 @@ function Footer() {
         <div id='bottom-info'>
           <p>&copy; {new Date().getFullYear()} Wildhaber</p>
           <p className='divider'>|</p>
-          <HashLink
+          {/* <HashLink
             to={'impressum#header'}
-            // onClick={() => {
-            //   scrollToTop();
-            // }}
-          >
-            {/* <Link
+          > */}
+          <Link
             to={'impressum'}
             onClick={() => {
               scrollToTop();
-            }}
-          > */}
+            }}>
             Impressum
-          </HashLink>
+          </Link>
         </div>
       </footer>
     </>
