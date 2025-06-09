@@ -4,7 +4,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-import { scrollToTop } from '@utilities/scrollToTop';
 
 function Footer() {
   return (
