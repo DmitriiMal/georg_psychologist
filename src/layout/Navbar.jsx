@@ -2,8 +2,10 @@
 import React, { useEffect, useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { scrollToTop } from '@utilities/scrollToTop';
 
-import { Link } from 'react-router';
+import { Link } from 'react-router-dom';
+// import { Link } from 'react-router';
 import { HashLink } from 'react-router-hash-link';
 import StonesLogo from './StonesLogo';
 
@@ -36,10 +38,6 @@ function Navbar() {
 
   const menuToggleHandler = () => {
     setMenuOpen((p) => !p);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   useEffect(() => {
