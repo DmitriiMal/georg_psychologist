@@ -3,16 +3,11 @@ import React, { useEffect, useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import {
-  Link,
-  // useNavigate
-} from 'react-router';
+import { Link } from 'react-router';
 import { HashLink } from 'react-router-hash-link';
 import StonesLogo from './StonesLogo';
-// import './navbar.scss';
 
 function Navbar() {
-  // const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolling, setIsScrolling] = useState(false);
   const [size, setSize] = useState({
