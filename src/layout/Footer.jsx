@@ -1,4 +1,4 @@
-// layout/Footer.jsx
+// Footer.jsx
 
 // import ContactForm from '../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -45,13 +45,7 @@ function Footer() {
         <div id='bottom-info'>
           <p>&copy; {new Date().getFullYear()} Wildhaber</p>
           <p className='divider'>|</p>
-          <Link
-            to={'impressum'}
-            onClick={() => {
-              scrollToTop();
-            }}>
-            Impressum
-          </Link>
+          <Link to={'impressum'}>Impressum</Link>
         </div>
       </footer>
     </>

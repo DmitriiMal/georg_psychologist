@@ -1,9 +1,7 @@
+// Impressum.jsx
 import Header from '@layout/Header.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faArrowUpRightFromSquare,
-  // faEnvelope, faLocationDot, faPhone
-} from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 export default function Home() {
   return (
     <>
@@ -13,32 +11,6 @@ export default function Home() {
           <h1>Impressum</h1>
           <div className='pb-2'>
             <p>Wildhaber Georg Josef, MSc</p>
-            {/*<p>Dao Zentrum Wien</p>
-        <ul className='contact-data pb-2 '>
-        <li className='scroll-animation fade-in-up'>Wildhaber Georg Josef, MSc.</li>
-        <li className='scroll-animation fade-in-up'>
-          <a href='https://dao-zentrum.at/' target='blank'>
-          <FontAwesomeIcon id='arrow-up-right-from-square' icon={faArrowUpRightFromSquare} />
-          Dao Zentrum
-          </a>
-          </li>
-          <li className='scroll-animation fade-in-up'>
-          <FontAwesomeIcon id='location-dot' icon={faLocationDot} />
-          Lustkandlgasse 53/1, 1090 Wien
-          </li>
-          <li className='scroll-animation fade-in-up'>
-          <a href='mailto:wildhaber@gmx.at'>
-          <FontAwesomeIcon id='envelope' icon={faEnvelope} />
-          wildhaber@gmx.at
-          </a>
-          </li>
-          <li className='scroll-animation fade-in-up'>
-          <a href='tel:0660/ 902 67 67'>
-          <FontAwesomeIcon id='phone' icon={faPhone} />
-          0660/ 902 67 67
-          </a>
-          </li>
-          </ul> */}
           </div>
 
           <div className='pb-2'>

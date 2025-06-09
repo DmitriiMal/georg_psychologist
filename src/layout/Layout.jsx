@@ -1,3 +1,4 @@
+// Layout.jsx
 import React from 'react';
 import { Outlet } from 'react-router';
 import Navbar from '@layout/Navbar.jsx';

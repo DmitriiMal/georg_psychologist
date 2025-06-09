@@ -1,4 +1,4 @@
-import { Children } from 'react';
+// Header.jsx
 
 export default function Header({ children, className = '' }) {
   return (

@@ -1,3 +1,4 @@
+// Home.jsx
 import Header from '@layout/Header.jsx';
 import { wildhaber } from '@assets/images/index.js';
 

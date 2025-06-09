@@ -1,3 +1,4 @@
+// Navbar.jsx
 import React, { useEffect, useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import { AiOutlineClose } from 'react-icons/ai';
