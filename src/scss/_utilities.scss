@@ -4,6 +4,8 @@
   max-width: $website-width;
   padding: 1.5rem;
   margin: auto;
+  position: relative;
+  // border: coral 1px solid;
 }
 
 h1 {
@@ -130,6 +132,11 @@ h3 {
 
 .fade-in-left {
   transform: translateX(-100px);
+  opacity: 0;
+}
+
+.fade-in-right {
+  transform: translateX(100px);
   opacity: 0;
 }
 

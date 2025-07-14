@@ -9,15 +9,17 @@
     }
   }
 
-  .section-light {
-    .section-flexbox {
-      flex-direction: column-reverse;
+  .section-flexbox-reverse {
+    flex-direction: column-reverse;
 
-      .photo {
-        height: 15rem;
-        margin-top: 1rem;
-      }
+    .photo {
+      height: 15rem;
+      margin-top: 1rem;
     }
+  }
+
+  .section-flexbox {
+    flex-direction: column;
   }
 
   .section-photo {

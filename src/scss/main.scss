@@ -168,7 +168,8 @@ header {
   p {
     padding-bottom: 1rem;
   }
-  .section-flexbox {
+  .section-flexbox,
+  .section-flexbox-reverse {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
@@ -176,6 +177,7 @@ header {
     .section-content {
       flex-shrink: 1;
       flex-grow: 2;
+      // border: olive 1px solid;
     }
 
     .photo {
@@ -209,6 +211,63 @@ header {
   background: #fff;
 }
 
+// Badge "kostenlos & offen für alle"
+
+.badges {
+  flex-shrink: 0;
+  min-width: 20rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .badge {
+    height: 13rem;
+    height: 5rem;
+    width: 13rem;
+    background: $main-color;
+    background: linear-gradient(90deg, $accent-color 0%, $main-color 100%);
+    background: linear-gradient(90deg, #b9c3c37e 0%, #8ac8c87e 100%);
+
+    color: set-text-color($main-color);
+    font-weight: 400;
+    font-size: $responsive-paragraph;
+    border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // position: absolute;
+    // right: 15rem;
+    // bottom: 0;
+    // transform: translateY(-15rem);
+    // animation: border-radius 8s linear infinite;
+  }
+
+  .badge-text-1 {
+    @extend .badge;
+    border-radius: 34% 66% 52% 48% / 66% 46% 54% 34%;
+    // border-radius: 42% 58% 66% 34% / 61% 59% 41% 39%;
+    // border-radius: 37% 63% 63% 37% / 64% 53% 47% 36%;
+  }
+  .badge-text-2 {
+    @extend .badge;
+    align-self: start;
+    border-radius: 34% 66% 52% 48% / 66% 46% 54% 34%;
+    // border-radius: 42% 58% 66% 34% / 61% 59% 41% 39%;
+    // border-radius: 37% 63% 63% 37% / 64% 53% 47% 36%;
+  }
+  .badge-text-3 {
+    @extend .badge;
+    border-radius: 34% 66% 52% 48% / 66% 46% 54% 34%;
+    // border-radius: 42% 58% 66% 34% / 61% 59% 41% 39%;
+    // border-radius: 37% 63% 63% 37% / 64% 53% 47% 36%;
+  }
+}
+
 .section-photo {
   // @extend .section-light;
   // background: linear-gradient(90deg, $dark-color 0%, #444 100%);
@@ -230,28 +289,6 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-  }
-
-  // Label "kostenlos & offen für alle"
-  .label {
-    height: 13rem;
-    width: 13rem;
-    background: $main-color;
-    background: linear-gradient(90deg, $accent-color 0%, $main-color 100%);
-    color: set-text-color($main-color);
-    font-weight: 500;
-    font-size: $responsive-paragraph;
-    border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    left: 50%;
-    margin-top: 1rem;
-    margin-bottom: -5rem;
-    animation: border-radius 8s linear infinite;
   }
 
   & * {
@@ -419,6 +456,13 @@ footer {
 .contact-data {
   list-style: none;
   margin-bottom: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2rem;
+  font-weight: lighter;
+
+  li a {
+    text-decoration: none;
+  }
 }
 
 // To Top Button
