@@ -78,6 +78,8 @@ header {
   height: 27vh;
   // height: 80vh;
   position: relative;
+  line-height: 1.8;
+  line-height: 2;
 
   &::before {
     content: '';
@@ -96,12 +98,12 @@ header {
   .header-content {
     // width: clamp(500px, 80%, 1200px);
     // margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items: center;
+    text-align: right;
+    align-items: end;
     height: 100%;
     text-wrap: balance;
     color: $light-color;
@@ -116,7 +118,7 @@ header {
     // }
 
     p {
-      margin-top: 1rem;
+      // margin-top: 1rem;
       font-size: $responsive-paragraph;
     }
   }

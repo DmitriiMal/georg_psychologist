@@ -5,15 +5,15 @@ import { wildhaber } from '@assets/images/index.js';
 export default function Home() {
   return (
     <>
-      <Header className='h-80'>
+      <Header className='height-header-main'>
         <div className='header-content'>
-          <h1 className='gradient-animation'>Wildhaber Georg Josef, MSc</h1>
-          <h2>Klinischer Psychologe in Wien</h2>
-          <p>Spezialisierung auf Stress &amp; Stressfolgeerkrankungen</p>
+          <h3>Wildhaber Georg Josef, MSc</h3>
+          <p>Klinischer Psychologe</p>
+          <p>Stress &amp; Stressfolgeerkrankungen</p>
         </div>
       </Header>
       {/* Über mich */}
-      <section id='ueber-mich' className='section-white pt-2 pb-2'>
+      <section id='ueber-mich' className='section-white pb-2'>
         <div className='container section-flexbox-reverse'>
           <div className='section-content'>
             <h2 className='scroll-animation fade-in-left'>Guten Tag und hallo,</h2>
@@ -25,7 +25,7 @@ export default function Home() {
             <p className='scroll-animation fade-in-up'>Im Leben ist nicht immer alles nur ein Hoch, sondern ab und zu befindet sich der Mensch aufgrund verschiedener Umstände in einem Tief. In einem solchen Moment, sei es verursacht durch Stress, Krankheit oder schwierige Lebensumstände, ist es sehr mutig sich jemandem Objektiven und Außenstehenden anzuvertrauen, um eigene Perspektiven und Vorstellungen zu relativieren.</p>
             <p className='scroll-animation fade-in-up'>Durch ein Gespräch auf Augenhöhe können gemeinsam neue Perspektiven erarbeiteten werden, sowie werden hilfreiche Interventionen in das Behandlungssetting eingebaut um mit den Herausforderungen des Lebens ein Stück leichter umgehen zu können und zu mehr innerer Ruhe zu finden.</p>
           </div>
-          <div className='photo scroll-animation fade-in-up'>
+          <div className='photo'>
             <img src={wildhaber} alt='Foto vom Georg Wildhaber' />
           </div>
         </div>
