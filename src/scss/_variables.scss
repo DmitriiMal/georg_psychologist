@@ -8,12 +8,13 @@ $main-color: #8ac8c8;
 $main-light-color: #b6ffff;
 $accent-color: #dcc6a9;
 // $accent-color: #dcc6a9;
-$light-color: #f0ede6;
+$light-color: #f6f4f0;
 $dark-color: #333;
+$dark-color-emhp: #3333331c;
 $bg-image: url('../assets/images/header.jpg');
 $responsive-paragraph: clamp(0.4rem, 6vw, 1.2rem);
-$link-gradient: linear-gradient(to right, #8ac8c8, #dcc6a9);
-$link-gradient: #44aeae;
+$link-gradient: linear-gradient(to right, #0e7d7d, #8ac8c8);
+$link-gradient: #0e7d7d;
 // background: linear-gradient(135deg, #8ac8c83a 0%, #dcc6a970 100%);
 
 $stone-top: #b4aaa3;

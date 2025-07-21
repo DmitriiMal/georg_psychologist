@@ -7,7 +7,7 @@
     h2,
     h3 {
       line-height: 1.5;
-      margin-bottom: 1.8rem;
+      margin-bottom: 0.8rem;
     }
 
     .header-content {
@@ -23,9 +23,10 @@
 
   .section-flexbox-reverse {
     flex-direction: column-reverse;
+    column-gap: 0;
 
     .photo {
-      height: 15rem;
+      height: 13rem;
       margin-top: 1rem;
     }
   }

@@ -2,7 +2,8 @@
 
 .container {
   max-width: $website-width;
-  padding: 1.5rem;
+  padding-inline: 1.5rem;
+  padding-bottom: 1.5rem;
   margin: auto;
   position: relative;
   overflow: hidden;
