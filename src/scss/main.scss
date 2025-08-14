@@ -319,7 +319,7 @@ header {
 // Footer
 footer {
   min-height: 70vh;
-  background: radial-gradient(circle, #fff 0%, $light-color 80%);
+  background: radial-gradient(circle, $light-color 0%, #fff 80%);
   color: set-text-color($light-color);
 
   background-color: $light-color;
@@ -460,9 +460,9 @@ footer {
 .contact-data {
   list-style: none;
   margin-bottom: 2rem;
-  font-family: 'Times New Roman', Times, serif;
+  // font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
-  font-weight: lighter;
+  // font-weight: lighter;
 
   li a {
     text-decoration: none;

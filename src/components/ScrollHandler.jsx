@@ -1,6 +1,7 @@
 // ScrollHandler.jsx
 import { useLayoutEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { scrollToTop } from '@utilities/scrollToTop';
 
 export default function ScrollHandler() {
   const { pathname, hash } = useLocation();
@@ -15,7 +16,7 @@ export default function ScrollHandler() {
       }
     } else {
       // Если без хеша — просто наверх
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+      scrollToTop();
     }
   }, [pathname, hash]);
 

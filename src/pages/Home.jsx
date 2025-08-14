@@ -1,8 +1,11 @@
 // Home.jsx
 import Header from '@layout/Header.jsx';
+import { useNavigate } from 'react-router';
 import { wildhaber } from '@assets/images/index.js';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <>
       <Header className='height-header-main'>
@@ -19,13 +22,10 @@ export default function Home() {
             <h2 className='scroll-animation fade-in-left'>Guten Tag und hallo,</h2>
             <h4 className='scroll-animation fade-in-left'>ich heiße Sie recht herzlich auf der Homepage meiner psychologischen Praxis willkommen.</h4>
             <div className='bottom-line scroll-animation fade-in-left'></div>
-            {/* <p className='scroll-animation fade-in-up'>Guten Tag und hallo! Ich heiße Sie recht herzlich auf meiner Homepage willkommen. Ich bin Klinischer Psychologe, spezialisiert auf Stress- und Stressfolgeerkrankungen. In meinem Werdegang konnte ich verschiedene berufliche Erfahrungen sammeln, darunter Pflege, Rettungswesen und Seelsorge. Dabei wurde mir klar, dass Stress ein großes Thema unserer heutigen Zeit ist.</p> */}
-            {/* <p className='scroll-animation fade-in-up'>Mir ist es ein Anliegen, gemeinsam mit meinen KlientInnen Techniken zu erarbeiten, um schwierige Lebensabschnitte zu meistern und zu innerer Ruhe zu finden. Dabei orientiere ich mich an Verhaltenstherapie, Positiver und Buddhistischer Psychologie sowie Entspannungsverfahren (Meditation, Yoga, PMR, etc.).</p> */}
-            {/* <p className='scroll-animation fade-in-up'>ich heiße Sie recht herzlich auf der Homepage meiner psychologischen Praxis willkommen.</p> */}
             <p className='scroll-animation fade-in-up'>Im Leben ist nicht immer alles nur ein Hoch, sondern ab und zu befindet sich der Mensch aufgrund verschiedener Umstände in einem Tief. In einem solchen Moment, sei es verursacht durch Stress, Krankheit oder schwierige Lebensumstände, ist es sehr mutig sich jemandem Objektiven und Außenstehenden anzuvertrauen, um eigene Perspektiven und Vorstellungen zu relativieren.</p>
             <p className='scroll-animation fade-in-up'>Durch ein Gespräch auf Augenhöhe können gemeinsam neue Perspektiven erarbeiteten werden, sowie werden hilfreiche Interventionen in das Behandlungssetting eingebaut um mit den Herausforderungen des Lebens ein Stück leichter umgehen zu können und zu mehr innerer Ruhe zu finden.</p>
           </div>
-          <div className='photo'>
+          <div onClick={() => navigate('/about')} className='photo'>
             <img src={wildhaber} alt='Foto vom Georg Wildhaber' />
           </div>
         </div>

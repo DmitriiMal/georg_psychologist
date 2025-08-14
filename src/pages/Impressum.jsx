@@ -2,7 +2,7 @@
 import Header from '@layout/Header.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-export default function Home() {
+export default function Impressum() {
   return (
     <>
       <Header />
@@ -14,10 +14,10 @@ export default function Home() {
           </div>
 
           <div className='pb-2'>
-            <h4>Berufsbezeichnung: Klinischer Psychologe (verliehen in Österreich)</h4>
+            <h4>Berufsbezeichnung: Klinischer Psychologe</h4>
             <a href='https://klinischepsychologie.ehealth.gv.at/Detail.aspx' target='blank'>
               <FontAwesomeIcon id='arrow-up-right-from-square' icon={faArrowUpRightFromSquare} />
-              Berufsbezeichnung: Klinischer Psychologe (verliehen in Österreich)
+              Verliehen in Österreich
             </a>
           </div>
           {/* <p>Die Berufsbezeichnung "Klinischer Psychologe" wurde in Österreich verliehen. Es gelten die Bestimmungen des Psychologengesetzes 2013.</p> */}
