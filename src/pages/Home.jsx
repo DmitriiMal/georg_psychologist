@@ -95,7 +95,7 @@ export default function Home() {
           <div className='bottom-line scroll-animation fade-in-left'></div>
           {/* <p className='scroll-animation fade-in-up'>Eine Einheit (50 Minuten) kostet 90 Euro. Bei Vorliegen einer krankheitswertigen Störung ist ein Kostenzuschuss durch die Krankenkasse möglich (ca. 35 Euro pro Einheit). In Ausnahmefällen biete ich einen Sozialtarif an. Meine Absageregelung: bitte informieren Sie mich bis spätestens 24 Stunden vor dem Termin, ansonsten muss der volle Betrag verrechnet werden.</p> */}
           <p className='scroll-animation fade-in-up'>
-            Als Klinischer Psychologe unterliege ich der gesetzlichen <mark>Schweigepflicht</mark>, aber auch Dokumentationspflicht. Der Preis für dieses beläuft sich auf <mark>90 Euro pro Einheit,</mark> wobei eine Einheit <mark>50 Minuten</mark> umfasst, hierbei kann in Ausnahmefällen ein Sozialtarif vereinbart werden. Im Falle einer krankheitswertigen Störung kann mit Ihrer Krankenkasse ein Zuschuss zur Behandlung geltend gemacht werden, dieser ist abhängig von Ihrer Krankenkasse und umfasst
+            Als Klinischer Psychologe unterliege ich der gesetzlichen <mark>Schweigepflicht</mark>, aber auch Dokumentationspflicht. Der Preis für dieses beläuft sich auf <mark>105 Euro pro Einheit,</mark> wobei eine Einheit <mark>50 Minuten</mark> umfasst, hierbei kann in Ausnahmefällen ein Sozialtarif vereinbart werden. Im Falle einer krankheitswertigen Störung kann mit Ihrer Krankenkasse ein Zuschuss zur Behandlung geltend gemacht werden, dieser ist abhängig von Ihrer Krankenkasse und umfasst
             in etwa <mark>35 Euro pro Behandlungseinheit</mark>.
           </p>
           <p className='scroll-animation fade-in-up'>
