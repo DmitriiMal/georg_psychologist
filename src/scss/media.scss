@@ -1,3 +1,20 @@
+@media (max-width: 768px) {
+  .about-me-grid {
+    grid-template-areas:
+      'photo'
+      'text'
+      'link';
+
+    .about-me-photo {
+      margin-bottom: 2rem;
+    }
+
+    .about-me-link {
+      margin-top: 1rem;
+    }
+  }
+}
+
 @media (max-width: 580px) {
   header {
     height: 15vh;
@@ -20,6 +37,21 @@
   .height-header-main {
     height: 35vh;
   }
+
+  // .about-me-grid {
+  //   grid-template-areas:
+  //     'photo'
+  //     'text'
+  //     'link';
+
+  //   .about-me-photo {
+  //     margin-bottom: 2rem;
+  //   }
+
+  //   .about-me-link {
+  //     margin-top: 1rem;
+  //   }
+  // }
 
   .section-flexbox-reverse {
     flex-direction: column-reverse;

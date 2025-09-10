@@ -6,14 +6,14 @@ export default function About() {
     <>
       <Header />
       <section id='ueber-mich' className='section-white pb-2'>
-        <div className='container section-flexbox-reverse'>
-          <div className='section-content'>
+        <div className='container about-me-grid'>
+          <div className='about-me-text'>
             <h2 className='scroll-animation fade-in-left'>Über mich</h2>
             <div className='bottom-line scroll-animation fade-in-left'></div>
             <p className='scroll-animation fade-in-up'>Von meiner Profession bin ich Klinischer Psychologe sowie Schulpsychologe und neben meiner eigenen Praxis bei der Schulpsychologie Wien im Bereich Berufsbildende Pflichtschulen tätig (Bildungsdirektion Wien).</p>
             <p className='scroll-animation fade-in-up'>In meinem Werdegang konnte ich verschiedene Berufe in meinem Leben erlernen, so sei es der Bereich Pflege, Rettungswesen, die Arbeit als Seelsorger bei einer Notrufnummer, aber auch unter anderem die Tätigkeit als mobiler Psychologe in der Arbeit mit Schwerkranken.</p>
           </div>
-          <div className='photo'>
+          <div className='about-me-photo'>
             <img src={wildhaber} alt='Foto vom Georg Wildhaber' />
           </div>
         </div>
