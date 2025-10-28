@@ -1,6 +1,6 @@
 // About.jsx
 import Header from '@layout/Header.jsx';
-import { wildhaber } from '@assets/images/index.js';
+import { wildhaber } from '@assets/images';
 export default function About() {
   return (
     <>
@@ -14,7 +14,7 @@ export default function About() {
             <p className='scroll-animation fade-in-up'>In meinem Werdegang konnte ich verschiedene Berufe in meinem Leben erlernen, so sei es der Bereich Pflege, Rettungswesen, die Arbeit als Seelsorger bei einer Notrufnummer, aber auch unter anderem die Tätigkeit als mobiler Psychologe in der Arbeit mit Schwerkranken.</p>
           </div>
           <div className='about-me-photo'>
-            <img src={wildhaber} alt='Foto vom Georg Wildhaber' />
+            <img src={wildhaber} alt='Foto vom Psychologen Georg Wildhaber in Wien' />
           </div>
         </div>
       </section>

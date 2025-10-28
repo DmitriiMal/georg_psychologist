@@ -1,7 +1,7 @@
 // Home.jsx
 import Header from '@layout/Header.jsx';
 import { useNavigate } from 'react-router';
-import { wildhaber } from '@assets/images/index.js';
+import { wildhaber } from '@assets/images';
 import { Link } from 'react-router-dom';
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
             <p className='scroll-animation fade-in-up'>Durch ein Gespräch auf Augenhöhe können gemeinsam neue Perspektiven erarbeiteten werden, sowie werden hilfreiche Interventionen in das Behandlungssetting eingebaut um mit den Herausforderungen des Lebens ein Stück leichter umgehen zu können und zu mehr innerer Ruhe zu finden.</p>
           </div>
           <div onClick={() => navigate('/about')} className='about-me-photo'>
-            <img src={wildhaber} alt='Foto vom Georg Wildhaber' />
+            <img src={wildhaber} alt='Foto vom Psychologen Georg Wildhaber in Wien' />
           </div>
           <div className='about-me-link'>
             <Link to='/about' className='btn-secondary'>
