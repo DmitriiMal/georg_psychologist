@@ -10,7 +10,7 @@ export default function Impressum() {
         <div className='container'>
           <h1>Impressum</h1>
           <div className='pb-2'>
-            <p>Wildhaber Georg Josef, MSc</p>
+            <p>Georg Josef Wildhaber, MSc</p>
           </div>
 
           <div className='pb-2'>

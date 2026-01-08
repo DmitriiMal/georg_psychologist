@@ -11,7 +11,12 @@ export default function Home() {
     <>
       <Header className='height-header-main'>
         <div className='header-content'>
-          <h3>Wildhaber Georg Josef, MSc</h3>
+          {/* Single H1 for SEO & accessibility; style parts independently */}
+          {/* <h1 className='hero-title'>
+            <span className='hero-name'>Georg Josef Wildhaber, MSc</span>
+            <span className='hero-desc'>Klinischer Psychologe · Stress &amp; Stressfolgeerkrankungen</span>
+          </h1> */}
+          <h3>Georg Josef Wildhaber, MSc</h3>
           <p>Klinischer Psychologe</p>
           <p>Stress &amp; Stressfolgeerkrankungen</p>
         </div>

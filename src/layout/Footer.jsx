@@ -13,7 +13,7 @@ function Footer() {
           <h2 className='scroll-animation fade-in-left'>Kontakt</h2>
           <div className='bottom-line scroll-animation fade-in-left'></div>
           <ul className='contact-data'>
-            <li className='scroll-animation fade-in-up'>Wildhaber Georg Josef, MSc.</li>
+            <li className='scroll-animation fade-in-up'>Georg Josef Wildhaber, MSc.</li>
             <li className='scroll-animation fade-in-up'>
               <a href='https://dao-zentrum.at/' target='blank'>
                 <FontAwesomeIcon id='arrow-up-right-from-square' icon={faArrowUpRightFromSquare} />
