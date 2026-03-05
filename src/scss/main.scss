@@ -393,15 +393,15 @@ footer {
 
       .input__field {
         width: 100%;
-        outline: 1.5px solid $light-color;
+        outline: none;
+        border: 1.5px solid rgba($dark-color, 0.22);
         font-size: 1rem;
         border-radius: 0.25rem;
-        color: $light-color;
-        padding: 0.5rem;
-        // padding-right: 2rem;
-        border: none;
-        background: $dark-color;
-        transition: all 0.2s;
+        color: $dark-color;
+        padding: 0.65rem 0.75rem;
+        background: $light-color;
+        box-shadow: 0 2px 6px rgba($dark-color, 0.05);
+        transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 
         &::placeholder {
           color: transparent;
@@ -410,13 +410,14 @@ footer {
         &:placeholder-shown ~ .input__label {
           font-size: 1rem;
           cursor: text;
-          color: $light-color;
-          top: 1.2rem;
+          color: rgba($dark-color, 0.7);
+          top: 1.3rem;
         }
 
         &:-webkit-autofill {
-          -webkit-box-shadow: 0 0 0px 1000px $dark-color inset;
-          -webkit-text-fill-color: $light-color !important;
+          -webkit-box-shadow: 0 0 0px 1000px $light-color inset;
+          -webkit-text-fill-color: $dark-color !important;
+          border: 1.5px solid rgba($dark-color, 0.22);
         }
       }
 
@@ -425,26 +426,51 @@ footer {
         position: absolute;
         top: 0.05rem;
         padding: 0 0.25rem;
-        background: $dark-color;
-        // display: block;
+        background: $light-color;
         font-size: 0.875rem;
         left: 0.5rem;
-        color: $light-color;
+        color: rgba($dark-color, 0.75);
         transition: 0.3s;
       }
 
       .input__field:focus ~ .input__label {
-        color: $main-color;
+        color: #2f7e7e;
       }
 
       .input__field:focus {
-        outline: 1.5px solid $main-color;
+        border-color: $main-color;
+        box-shadow: 0 0 0 3px rgba($main-color, 0.18);
+        background: $light-color;
+      }
+
+      ul,
+      p {
+        margin-top: 0.35rem;
+        color: #8d3a3a;
+        font-size: 0.875rem;
+        line-height: 1.35;
+      }
+
+      ul {
+        list-style: none;
       }
     }
 
     #my-form-status {
       margin: 2rem 0;
     }
+
+  }
+
+  .contact-form__success {
+    color: #2d7070;
+    margin-top: 1rem;
+  }
+
+  .input__submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    filter: saturate(0.7);
   }
 
   #bottom-info {
