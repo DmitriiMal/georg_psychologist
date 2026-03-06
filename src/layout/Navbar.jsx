@@ -103,12 +103,7 @@ function Navbar() {
             </HashLink>
           </ul>
         </nav>
-        <button
-          type='button'
-          className={`header-nav__content__toggle ${menuOpen ? 'is-open' : ''}`}
-          onClick={menuToggleHandler}
-          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
-          aria-expanded={menuOpen}>
+        <button type='button' className={`header-nav__content__toggle ${menuOpen ? 'is-open' : ''}`} onClick={menuToggleHandler} aria-label={menuOpen ? 'Close menu' : 'Open menu'} aria-expanded={menuOpen}>
           <span className='hamburger-line'></span>
           <span className='hamburger-line'></span>
           <span className='hamburger-line'></span>
