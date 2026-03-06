@@ -1,7 +1,5 @@
 // Navbar.jsx
 import React, { useEffect, useState } from 'react';
-import { BiMenuAltRight } from 'react-icons/bi';
-import { AiOutlineClose } from 'react-icons/ai';
 import { scrollToTop } from '@utilities/scrollToTop';
 
 import { Link } from 'react-router-dom';
@@ -105,8 +103,16 @@ function Navbar() {
             </HashLink>
           </ul>
         </nav>
-        {/* <div className='header-nav__content__toggle'>{!menuOpen ? <h1 onClick={menuToggleHandler}>A</h1> : <h1 onClick={menuToggleHandler}>B</h1>}</div> */}
-        <div className='header-nav__content__toggle'>{!menuOpen ? <BiMenuAltRight onClick={menuToggleHandler} /> : <AiOutlineClose onClick={menuToggleHandler} />}</div>
+        <button
+          type='button'
+          className={`header-nav__content__toggle ${menuOpen ? 'is-open' : ''}`}
+          onClick={menuToggleHandler}
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}>
+          <span className='hamburger-line'></span>
+          <span className='hamburger-line'></span>
+          <span className='hamburger-line'></span>
+        </button>
       </div>
     </div>
   );
