@@ -104,6 +104,7 @@ export default function Home() {
                 <li>Depression und Burnout</li>
                 <li>Schlafstörungen</li>
                 <li>Suchtverhalten</li>
+                <li>Trauerarbeit</li>
               </ul>
             </article>
           </div>
