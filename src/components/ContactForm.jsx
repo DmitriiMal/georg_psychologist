@@ -1,9 +1,21 @@
-import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { useEffect, useRef } from 'react';
+import { trackEvent } from '@utilities/analytics';
 // For more help visit https://formspr.ee/react-help
 
 function ContactForm() {
   const [state, handleSubmit] = useForm('mwplrnpn');
+  const isTrackedRef = useRef(false);
+
+  useEffect(() => {
+    if (state.succeeded && !isTrackedRef.current) {
+      trackEvent('form_submit', {
+        form_name: 'contact_form',
+      });
+      isTrackedRef.current = true;
+    }
+  }, [state.succeeded]);
+
   if (state.succeeded) {
     return <h3 className='contact-form__success scroll-animation fade-in-up'>Danke für Ihre Nachricht!</h3>;
   }

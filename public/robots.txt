@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://praxis-wildhaber.at/sitemap.xml
