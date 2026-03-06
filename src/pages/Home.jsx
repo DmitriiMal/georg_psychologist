@@ -72,39 +72,67 @@ export default function Home() {
       </section>
 
       {/* Themengebiete */}
-      <section id='themen' className='section-white pt-2 pb-2'>
+      <section id='themen' className='section-white themen-section pt-2 pb-2'>
         <div className='container'>
           <h2 className='scroll-animation fade-in-left'>Themengebiete</h2>
           <div className='bottom-line scroll-animation fade-in-left'></div>
-          <ul>
-            <li className='scroll-animation fade-in-up'>Stressbewältigung</li>
-            <li className='scroll-animation fade-in-up'>Persönlichkeitsentwicklung</li>
-            <li className='scroll-animation fade-in-up'>Umgang mit Krisen und Konflikten</li>
-            <li className='scroll-animation fade-in-up'>Umgang mit Verlusten</li>
-            <li className='scroll-animation fade-in-up'>Trauerarbeit</li>
-            <li className='scroll-animation fade-in-up'>Körperliches Gebrechen assoziiert mit Stress</li>
-            <ul>
-              <li className='scroll-animation fade-in-up'>Bluthochdruck</li>
-              <li className='scroll-animation fade-in-up'>Kopfschmerzen</li>
-              <li className='scroll-animation fade-in-up'>Verspannungen, Schmerzen</li>
-              <li className='scroll-animation fade-in-up'>Magen-, Darmbeschwerden</li>
-              <li className='scroll-animation fade-in-up'>etc.</li>
-            </ul>
-            <li className='scroll-animation fade-in-up'>Angst und Panik</li>
-            <li className='scroll-animation fade-in-up'>Depression und Burnout</li>
-            <li className='scroll-animation fade-in-up'>Schlafstörungen</li>
-            <li className='scroll-animation fade-in-up'>Suchtverhalten</li>
-            <li className='scroll-animation fade-in-up'>...</li>
-          </ul>
+          <p className='themen-intro scroll-animation fade-in-up'>Im gemeinsamen Prozess arbeiten wir an persönlichen, emotionalen und stressbedingten Themen, abgestimmt auf Ihre aktuelle Lebenssituation.</p>
+          <div className='themen-grid'>
+            <article className='themen-card scroll-animation fade-in-up'>
+              <h3>Zentrale Schwerpunkte</h3>
+              <ul>
+                <li>Stressbewältigung</li>
+                <li>Persönlichkeitsentwicklung</li>
+                <li>Umgang mit Krisen und Konflikten</li>
+                <li>Umgang mit Verlusten</li>
+                <li>Trauerarbeit</li>
+              </ul>
+            </article>
+            <article className='themen-card themen-card-accent scroll-animation fade-in-up'>
+              <h3>Körperliche Beschwerden bei Stress</h3>
+              <ul>
+                <li>Bluthochdruck</li>
+                <li>Kopfschmerzen</li>
+                <li>Verspannungen, Schmerzen</li>
+                <li>Magen-, Darmbeschwerden</li>
+              </ul>
+            </article>
+            <article className='themen-card scroll-animation fade-in-up'>
+              <h3>Weitere Themen</h3>
+              <ul>
+                <li>Angst und Panik</li>
+                <li>Depression und Burnout</li>
+                <li>Schlafstörungen</li>
+                <li>Suchtverhalten</li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
 
       {/* Rahmenbedingungen */}
-      <section id='rahmen' className='section-light pt-2 pb-2'>
+      <section id='rahmen' className='section-light rahmen-section pt-2 pb-2'>
         <div className='container'>
           <h2 className='scroll-animation fade-in-left'>Rahmenbedingungen</h2>
           <div className='bottom-line scroll-animation fade-in-left'></div>
-          {/* <p className='scroll-animation fade-in-up'>Eine Einheit (50 Minuten) kostet 90 Euro. Bei Vorliegen einer krankheitswertigen Störung ist ein Kostenzuschuss durch die Krankenkasse möglich (ca. 35 Euro pro Einheit). In Ausnahmefällen biete ich einen Sozialtarif an. Meine Absageregelung: bitte informieren Sie mich bis spätestens 24 Stunden vor dem Termin, ansonsten muss der volle Betrag verrechnet werden.</p> */}
+          <div className='rahmen-facts'>
+            <article className='rahmen-fact scroll-animation fade-in-up'>
+              <span className='label'>Preis</span>
+              <strong>105 Euro pro Einheit</strong>
+            </article>
+            <article className='rahmen-fact scroll-animation fade-in-up'>
+              <span className='label'>Dauer</span>
+              <strong>50 Minuten</strong>
+            </article>
+            <article className='rahmen-fact scroll-animation fade-in-up'>
+              <span className='label'>Kassa-Zuschuss</span>
+              <strong>ca. 35 Euro</strong>
+            </article>
+            <article className='rahmen-fact scroll-animation fade-in-up'>
+              <span className='label'>Absageregelung</span>
+              <strong>mindestens 24h vorher</strong>
+            </article>
+          </div>
           <p className='scroll-animation fade-in-up'>
             Als Klinischer Psychologe unterliege ich der gesetzlichen <mark>Schweigepflicht</mark>, aber auch Dokumentationspflicht. Der Preis für dieses beläuft sich auf <mark>105 Euro pro Einheit,</mark> wobei eine Einheit <mark>50 Minuten</mark> umfasst, hierbei kann in Ausnahmefällen ein Sozialtarif vereinbart werden. Im Falle einer krankheitswertigen Störung kann mit Ihrer Krankenkasse ein Zuschuss zur Behandlung geltend gemacht werden, dieser ist abhängig von Ihrer Krankenkasse und umfasst
             in etwa <mark>35 Euro pro Behandlungseinheit</mark>.
