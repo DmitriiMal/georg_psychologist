@@ -244,25 +244,50 @@
     transition-duration: 1s;
   }
 
-  .stone-top:hover {
+  .stone-top.is-touch-active {
     transition-duration: 0.15s;
     fill: #efe6d8;
     filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.14));
     transform: translateY(-1px) scale(1.025);
   }
 
-  .stone-middle:hover {
+  .stone-middle.is-touch-active {
     transition-duration: 0.15s;
     fill: #b2d7d6;
     filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.14));
     transform: translateY(-1px) scale(1.025);
   }
 
-  .stone-bottom:hover {
+  .stone-bottom.is-touch-active {
     transition-duration: 0.15s;
     fill: #f2ece4;
     filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.14));
     transform: translateY(-1px) scale(1.03);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .stones-logo {
+    .stone-top:hover {
+      transition-duration: 0.15s;
+      fill: #efe6d8;
+      filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.14));
+      transform: translateY(-1px) scale(1.025);
+    }
+
+    .stone-middle:hover {
+      transition-duration: 0.15s;
+      fill: #b2d7d6;
+      filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.14));
+      transform: translateY(-1px) scale(1.025);
+    }
+
+    .stone-bottom:hover {
+      transition-duration: 0.15s;
+      fill: #f2ece4;
+      filter: drop-shadow(0 4px 9px rgba(0, 0, 0, 0.14));
+      transform: translateY(-1px) scale(1.03);
+    }
   }
 }
 
