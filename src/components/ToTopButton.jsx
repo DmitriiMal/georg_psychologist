@@ -26,7 +26,15 @@ export default function ToTopButton() {
   };
 
   return (
-    <button id='to-top' className={showButton ? 'show' : ''} onClick={scrollToTop} onMouseOver={addBounce} onMouseOut={() => iconRef.current?.classList.remove('fa-bounce')}>
+    <button
+      id='to-top'
+      type='button'
+      className={showButton ? 'show' : ''}
+      aria-label='Nach oben scrollen'
+      onClick={scrollToTop}
+      onMouseOver={addBounce}
+      onMouseOut={() => iconRef.current?.classList.remove('fa-bounce')}
+    >
       <FontAwesomeIcon ref={iconRef} id='chevron-up' icon={faChevronUp} size='xl' />
     </button>
   );
