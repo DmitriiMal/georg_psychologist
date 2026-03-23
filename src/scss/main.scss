@@ -492,7 +492,10 @@ footer {
         padding: 0.65rem 0.75rem;
         background: $light-color;
         box-shadow: 0 2px 6px rgba($dark-color, 0.05);
-        transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+        transition:
+          border-color 0.2s ease,
+          box-shadow 0.2s ease,
+          background-color 0.2s ease;
 
         &::placeholder {
           color: transparent;
@@ -550,7 +553,6 @@ footer {
     #my-form-status {
       margin: 2rem 0;
     }
-
   }
 
   .contact-form__success {
@@ -644,6 +646,9 @@ footer {
   z-index: 2;
   border: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  tap-highlight-color: transparent;
+  touch-action: manipulation;
   border-radius: 37% 63% 71% 29% / 60% 64% 36% 40%;
   animation: border-radius 6s linear infinite;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
