@@ -4,6 +4,7 @@ import ContactForm from '../components/ContactForm';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare, faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { trackContactClick } from '@utilities/analytics';
 
 function Footer() {
   return (
@@ -13,9 +14,9 @@ function Footer() {
           <h2 className='scroll-animation fade-in-left'>Kontakt</h2>
           <div className='bottom-line scroll-animation fade-in-left'></div>
           <ul className='contact-data'>
-            <li className='scroll-animation fade-in-up'>Georg Josef Wildhaber, MSc.</li>
+            <li className='scroll-animation fade-in-up'>Georg Josef Wildhaber, MSc</li>
             <li className='scroll-animation fade-in-up'>
-              <a href='https://dao-zentrum.at/' target='blank'>
+              <a href='https://dao-zentrum.at/' target='_blank' rel='noopener noreferrer'>
                 <FontAwesomeIcon id='arrow-up-right-from-square' icon={faArrowUpRightFromSquare} />
                 Dao Zentrum
               </a>
@@ -25,16 +26,23 @@ function Footer() {
               Lustkandlgasse 53/1, 1090 Wien
             </li>
             <li className='scroll-animation fade-in-up'>
-              <a href='mailto:wildhaber@gmx.at'>
+              <a
+                href='mailto:wildhaber@gmx.at'
+                onClick={() => {
+                  trackContactClick('email');
+                }}>
                 <FontAwesomeIcon id='envelope' icon={faEnvelope} />
                 wildhaber@gmx.at
               </a>
-              {/* Todo: check for custom email in GoDaddy */}
             </li>
             <li className='scroll-animation fade-in-up'>
-              <a href='tel:0660/ 902 67 67'>
+              <a
+                href='tel:+436609026767'
+                onClick={() => {
+                  trackContactClick('phone');
+                }}>
                 <FontAwesomeIcon id='phone' icon={faPhone} />
-                0660/ 902 67 67
+                +43 660 902 67 67
               </a>
             </li>
           </ul>
@@ -44,7 +52,7 @@ function Footer() {
         <div id='bottom-info'>
           <p>&copy; {new Date().getFullYear()} Wildhaber</p>
           <p className='divider'>|</p>
-          <Link to={'impressum'}>Impressum</Link>
+          <Link to='/impressum'>Impressum</Link>
         </div>
       </footer>
     </>

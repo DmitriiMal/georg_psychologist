@@ -1,13 +1,18 @@
 // About.jsx
 import Header from '@layout/Header.jsx';
 import { wildhaber } from '@assets/images';
+import SeoHelmet from '@seo/SeoHelmet.jsx';
+import { seoPages } from '@seo/seoConfig';
+import { aboutStructuredData } from '@seo/structuredData';
 export default function About() {
   return (
     <>
+      <SeoHelmet {...seoPages.about} structuredData={aboutStructuredData} />
       <Header />
       <section id='ueber-mich' className='section-white pb-2'>
         <div className='container about-me-grid'>
           <div className='about-me-text'>
+            <h1 className='sr-only'>Über Georg Wildhaber, MSc – Klinischer Psychologe in Wien</h1>
             <h2 className='scroll-animation fade-in-left'>Über mich</h2>
             <div className='bottom-line scroll-animation fade-in-left'></div>
             <p className='scroll-animation fade-in-up'>Von meiner Profession bin ich Klinischer Psychologe sowie Schulpsychologe und neben meiner eigenen Praxis bei der Schulpsychologie Wien im Bereich Berufsbildende Pflichtschulen tätig (Bildungsdirektion Wien).</p>

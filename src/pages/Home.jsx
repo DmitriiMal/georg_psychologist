@@ -3,19 +3,19 @@ import Header from '@layout/Header.jsx';
 import { useNavigate } from 'react-router';
 import { wildhaber } from '@assets/images';
 import { Link } from 'react-router-dom';
+import SeoHelmet from '@seo/SeoHelmet.jsx';
+import { seoPages } from '@seo/seoConfig';
+import { homeStructuredData } from '@seo/structuredData';
 
 export default function Home() {
   const navigate = useNavigate();
 
   return (
     <>
+      <SeoHelmet {...seoPages.home} structuredData={homeStructuredData} />
       <Header className='height-header-main'>
         <div className='header-content'>
-          {/* Single H1 for SEO & accessibility; style parts independently */}
-          {/* <h1 className='hero-title'>
-            <span className='hero-name'>Georg Josef Wildhaber, MSc</span>
-            <span className='hero-desc'>Klinischer Psychologe · Stress &amp; Stressfolgeerkrankungen</span>
-          </h1> */}
+          <h1 className='sr-only'>Klinischer Psychologe in Wien 1090 – Georg Josef Wildhaber, MSc</h1>
           <h3>Georg Josef Wildhaber, MSc</h3>
           <p>Klinischer Psychologe</p>
           <p>Stress &amp; Stressfolgeerkrankungen</p>
@@ -48,7 +48,6 @@ export default function Home() {
           <div className='section-content'>
             <h2 className='scroll-animation fade-in-left'>Mein Angebot</h2>
             <div className='bottom-line scroll-animation fade-in-left'></div>
-            {/* <p className='scroll-animation fade-in-up'>Ich biete Psychologische Therapie, Supervision, Coaching, Vorträge und Workshops für Gruppen an. In meiner Arbeit lege ich besonderen Wert auf ein empathisches Gespräch auf Augenhöhe, um neue Perspektiven zu eröffnen und den Umgang mit Stress zu erleichtern.</p> */}
             <ul>
               <li className='scroll-animation fade-in-up'>Psychologische Therapie</li>
               <li className='scroll-animation fade-in-up'>Supervision</li>

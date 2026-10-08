@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router';
 import Navbar from '@layout/Navbar.jsx';
 import Footer from '@layout/Footer.jsx';
 import ToTopButton from '@components/ToTopButton.jsx';
+import AnalyticsTracker from '@components/AnalyticsTracker.jsx';
 import useScrollReveal from '@hooks/useScrollReveal';
 import '@scss/main.scss';
 import '@scss/media.scss';
@@ -15,6 +16,7 @@ function Layout() {
 
   return (
     <>
+      <AnalyticsTracker />
       <Navbar />
       <Outlet />
       <Footer />
