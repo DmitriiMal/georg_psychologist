@@ -16,14 +16,14 @@ function Footer() {
           <ul className='contact-data'>
             <li className='scroll-animation fade-in-up'>Georg Josef Wildhaber, MSc</li>
             <li className='scroll-animation fade-in-up'>
-              <a href='https://dao-zentrum.at/' target='_blank' rel='noopener noreferrer'>
+              <a href='https://www.thewhole.space/' target='_blank' rel='noopener noreferrer'>
                 <FontAwesomeIcon id='arrow-up-right-from-square' icon={faArrowUpRightFromSquare} />
-                Dao Zentrum
+                the whole space
               </a>
             </li>
             <li className='scroll-animation fade-in-up'>
               <FontAwesomeIcon id='location-dot' icon={faLocationDot} />
-              Lustkandlgasse 53/1, 1090 Wien
+              Nussdorferstraße 52/5 1090 Wien
             </li>
             <li className='scroll-animation fade-in-up'>
               <a
